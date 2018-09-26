@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta charset="UTF-8">
+        <title>CS08-InClass </title>
+        <style type="text/css">
+        body{color:indianred;
+        
+        text-align: center;
+
+        }
+        form{background-color: bisque;
+            margin-top:50px;
+            margin-bottom: 50px;
+            margin-left: 100px;
+            margin-right: 100px;
+            padding-top: 12px;
+        padding-bottom: 20px;
+    padding-right: 50px;
+padding-left: 100px}
+       
+        </style>
+        <h1>WebForms Demo</h1>
+
+
+</head>
+
+<body>
+        <form method="POST" action="mailto:szhu2@babson.edu">
+                <p>Last Name: <input type="text" name="last_name" maxlength="10" size="10">
+                    First Name: <input type="text" size="10"></p>
+                    <p> Gender: Male<input type="radio" name="sex" value="m">
+                        Female<input type="radio" name="sex" value="m">
+                    </p>
+                    <p>
+                            Birth Month: 
+                            <select name="month" value="Month">
+                                    <option value="January">January</option>
+                                    <option value="February">February</option>
+                                    <option value="March">March</option>
+                                    <option value="April">April</option>
+                                    <option value="May">May</option>
+                                    <option value="June">June</option>
+                                    <option value="July">July</option>
+                                    <option value="August">August</option>
+                                    <option value="September">September</option>
+                                    <option value="October">October</option>
+                                    <option value="November">November</option>
+                                    <option value="December">December</option>
+
+                                  </select>
+                                  
+                    </p>
+                    <p> My favorite WebTech topics are
+                        <br><input type="checkbox" name="products-question" value="1"> Basic HTML
+                        <br><input type="checkbox" name="products-question" value="2"> CSS
+                        <br><input type="checkbox" name="products-question" value="3"> Tables
+                        <br><input type="checkbox" name="products-question" value="4"> Forms
+
+                    </p>
+                    <p><textarea id="textbox" name="comments" rows="5" cols="29">Further comments</textarea></p>
+                    <p><input type="submit" name="Submit" value="Submit">
+                        <input type="reset" name="reset" value="Reset"></p>
+        
+        
+            </form>
+            <p><a href="../classwork/low.htm">My Work in WebTech</a></p>
+</body>
+
+</html>

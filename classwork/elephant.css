@@ -1,0 +1,20 @@
+table{
+    width:500px;
+    margin-right:auto;
+    margin-left: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid;
+    color:black;
+    border-spacing: 0
+
+}
+tr,td {border:2px solid black
+
+}
+p.scroll{
+    background-color:lime;
+    width:250px; height: 300px;
+    overflow:scroll;
+    
+
+}
