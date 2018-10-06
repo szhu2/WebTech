@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta charset="UTF-8">
+        <title>HW2-2</title>
+        <style type="text/css">
+            h1{color: white;
+            font-size: 3em;
+            font-family: arial;
+            text-align: center}
+            body{background-color: black;}
+     
+
+            table{width:70% fixed;
+            margin-top:30px;
+            margin-bottom: 10px;
+            font-family: Arial;
+            border: 1px solid;
+            color:black;
+            margin-left:auto;
+            margin-right:auto;
+            background-color:lightgrey;
+            table-layout: fixed;
+            position: relative;
+            }
+            tr,td,th {border:1px solid black;
+            text-align: center}
+            #white{background-color: white}
+            .left{text-align: left}
+            .yellow{background-color: yellow}
+            #red{background-color: red}
+           
+        </style>
+
+</head>
+
+<body>
+    <h1>Soap Survery</h1>
+    <form method="POST" action="mailto:szhu2@babson.edu">
+            
+    <table>
+        <tr><td>Soap Image</td><td>Soap Color <br>Preference</td><td>Soap Purchase <br>Intent</td><td>Soap Features Liked</td></tr>
+    
+        <tr><td><img src="../classwork/Images/soap-1.jpg" height="150px"></td><td>
+            <div class="left">
+                <p> <input type="radio" name="color" value="g">Green</p>
+                   <p> <input type="radio" name="color" value="go">Gold (shown)</p>
+                   <p> <input type="radio" name="color" value="r"> Red</p></div>
+ </td>
+        <td>
+             
+                    <p>At $5.00/Unit</p> <select name="intent" value="Intent">
+                            <option value="5">Definitely Buy</option>
+                            <option value="4">Likely Buy</option>
+                            <option value="3">Undecided</option>
+                            <option value="2">Unlikely Buy</option>
+                            <option value="1">Not Buy</option>
+
+             
+
+        </td>
+        
+        <td><div class="left">
+                        <br><input type="checkbox" name="features" value="1"> Shape
+                        <br><input type="checkbox" name="features" value="2"> Size
+                        <br><input type="checkbox" name="features" value="3"> Smell
+                        <br><input type="checkbox" name="features" value="4"> Texture</div>
+        </td>
+  
+    
+    </tr>
+   
+    <tr><td><img src="../classwork/Images/soap-2.jpg" height="150px"></td><td>
+            <div class="left">
+            <p> <input type="radio" name="color2" value="i">Ivory</p>
+               <p> <input type="radio" name="color2" value="s">Sandalwood (shown)</p>
+               <p> <input type="radio" name="color2" value="p"> Pink</p> </div>
+</td>
+    <td>
+         
+                <p>At $8.00/Unit</p> <select name="intent2" value="Intent">
+                        <option value="5">Definitely Buy</option>
+                        <option value="4">Likely Buy</option>
+                        <option value="3">Undecided</option>
+                        <option value="2">Unlikely Buy</option>
+                        <option value="1">Not Buy</option>
+
+         
+
+    </td>
+    <td>
+            <div class="left"><br><input type="checkbox" name="features2" value="1"> Shape
+                    <br><input type="checkbox" name="features2" value="2"> Size
+                    <br><input type="checkbox" name="features2" value="3"> Smell
+                    <br><input type="checkbox" name="features2" value="4"> Texture</div>
+    </td>
+    </tr>
+    <tr id="white"><td colspan="4">Tell us about yourself...</td></tr>
+    <tr><td> <div class="left">Gender: <select name="Gender">
+            <option value="0">Male</option>
+            <option value="1">Female</option></div>
+    </td>
+<td colspan="3"><div class="left">Age: (under 25 enter 1, 25-40 enter 2, else enter 3) <input class="yellow" type="text" name="age" maxlength="3" size="5"></div></td></tr>
+<tr><td colspan="2"><div class="left">Your comments are welcome:</div><p><textarea class="yellow" id="textbox" name="comments" rows="5" cols="55"></textarea></p></td>
+<td colspan="2"> 
+
+        <input type="submit" name="Submit" value="Done">
+            <input id="red" type="reset" name="reset" value="Oops">
+</td>
+</tr>
+    </table>
+    </form>
+
+    <img src="../classwork/Images/beaver.jpg"><img src="../classwork/Images/beaver.jpg"><img src="../classwork/Images/beaver.jpg"><img src="../classwork/Images/beaver.jpg"><img src="../classwork/Images/beaver.jpg"><img src="../classwork/Images/beaver.jpg"><img src="../classwork/Images/beaver.jpg"><img src="../classwork/Images/beaver.jpg">
+
+</body>
+
+</html>
