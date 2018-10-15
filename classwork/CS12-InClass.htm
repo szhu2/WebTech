@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>CS12-InClass</title>
+
+        <style type="text/css">
+            /* Your styles go here */
+            body {
+                text-align: center;
+            }
+            img { 
+   border:1px solid red;
+}
+        </style>
+        <script type="text/javascript">
+        function enlarge(){
+                let i=document.getElementById("map");
+                let w=i.width;
+                i.width=w*(1+0.5);
+        }
+        function shrink(){
+           let i=document.getElementById("map");
+                let w=i.width;
+                i.width=400;
+                i.style.border="None";
+
+
+        }
+
+        </script>
+    </head>
+
+    <body>
+
+        <h2> Manipulating Styles and Images </h2>
+
+        <p><img src="images/usa.png" alt="Image goes here" title="map of USA" width="400"  onmouseover="enlarge()" onmouseout="shrink()" id="map"></p>
+
+        <hr>
+        <p><a href="low.htm">My Work in WebTech</a></p>
+
+    </body>
+
+</html>

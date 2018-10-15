@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta charset="UTF-8">
+        <title>ECO About</title>
+        <style type="text/css">
+
+                nav{display: inline-block;
+                position: fixed;
+                background-color:rgb(245, 245, 245);
+                margin: 0 0 0 0;
+                padding: 5px 0 10px 0;
+                font-size: 100%;
+                width:100%;
+                overflow: hidden;
+                top:0}
+
+                hr{width:50%}
+
+
+
+    
+                a:link{text-decoration: none;
+                color:black}
+
+                a:visited{color:black;
+                text-decoration: none}
+
+                .bold:hover{font-weight: bolder}
+
+                #index{font-size: 25px;
+                text-align: left}
+                
+                .split{height:100%;
+                width:50%;
+                position:fixed;
+                z-index: -1}
+                .left{left:0;
+                background-color:rgb(236, 230, 230);
+                padding-left:50px;}
+                .right{right:0;
+                background-color:rgb(240, 238, 238);
+                padding:25px 0 0 50px;
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif}
+                .largerfont{font-size: 20px;}
+
+                
+
+        </style>
+                <nav>
+                        <a id="index" href="Index.htm">The ECO Hub</a> &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp  &nbsp 
+                        <a class="bold" href="MENS.htm">MEN'S</a> &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp
+                        <a class="bold" href="WOMENS.htm">WOMEN'S</a> &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp
+                        <a class="bold" href="LOOKBOOK.htm">LOOKBOOK</a> &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp
+                        <a class="bold" href="ABOUT.htm">ABOUT</a>
+        
+                 </nav>
+            
+
+</head>
+
+
+<body>
+
+
+        <div class="split left">
+                <p id="stuffing">
+                        This is stuffing
+                </p>
+                
+                <p class="largerfont">Founder: Levko Karmazyn</p>
+                <p>Levko was born and raised in Maryland, outside of Washington DC.
+                    He <br> spent many hour of his childhood behind the seat of a piano or outdoors 
+                    <br> with family and friends.
+                    He currently pursues an Enviormental Studies 
+                    <br>degree at the University of Pittsburg and hopes to pursue work in 
+                    sustainable <br>international development.
+
+                </p>
+                <span class="largerfont">Hometown</span><br>
+
+                <map name="washington">
+                        <area shape="rect" coords="131,87,313,262"
+                        href="https://washington.org/"
+                        alt="Washington DC website" title="Washington DC"target="_blank" />
+                        <area shape="rect" coords="328,67,359,100"
+                        href="https://www.maryland.gov/Pages/default.aspx" alt="Maryland website" title="Lev's Town" target="_blank" />
+
+
+                <img src="washingtonmap.jpg" usemap="#washington" alt="Map of Washington" title="Washington">
+        
+            </div>
+            <div class="split right">
+                <p  class="largerfont">Contact Us</p>
+                    <form method="POST" action="mailto:szhu2@babson.edu">
+                            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp First Name: <input type="text" name="firstname" maxlength="13" size="8">
+                        <p>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Last Name: <input type="text" name="lastname" maxlength="13" size="9"></p>
+                        <p>&nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp Email: <input type="text" name="email" maxlength="25" size="15"></p>
+                        <p> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Reason for reaching out:
+                                <select name="Reason" value="Reason">
+                                        <option value="-1"></option>
+                                        <option value="0">Problem with website</option>
+                                        <option value="1">Placing an order</option>
+                                        <option value="2">More about ECO Hub</option>
+                                        <option value="3">More about Levko</option>
+                                        <option value="4">More about Sophia</option>
+                                        <option value="5">Work with us!</option></select></p>
+        
+                        <p>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<textarea name="comments" rows="7" cols="45"></textarea></p>
+                    
+                        <p> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp How did you hear about us?
+                                <select name="Source" value="Source">
+                                        <option value="0"></option>
+                                        <option value="1">Facebook</option>
+                                        <option value="2">Twitter</option>
+                                        <option value="3">Instagram</option>
+                                        <option value="4">Online Publication</option>
+                                        <option value="5">Friend</option></select></p>
+                        <p> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Join our mailing list?
+                                <input type="radio" name="maillist" value="1">Hell yeah &nbsp &nbsp
+                                <input type="radio" name="maillist" value="0">Nah</p>
+                                
+                        <p>   &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+                                <input type="submit" name="Submit" value="Done">
+                                <input type="reset" name="reset" value="Oops"></p> 
+                        
+                    </form>
+        
+            </div>
+
+
+                
+</div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta charset="UTF-8">
+        <title>JS Demo</title>
+        <script type="text/javascript">
+            function calculate(){
+                let x=document.getElementById("x").innerHTML;
+                let y=document.getElementById("y").innerHTML;
+                let result=x*y;
+                //alert("The result is " + result)
+                document.getElementById("result").innerHTML=result;
+
+            }
+        
+        
+        </script>
+
+</head>
+
+<body>
+    <h1></h1>
+    <p>x=<span id="x">2018</span></p>
+    <p>y=<span id="y">2019</span></p>
+    <p>The result of calculation is <span id="result"></span></p>
+
+    <button onclick="calculate()">Click Me!</button>
+
+</body>
+
+</html>

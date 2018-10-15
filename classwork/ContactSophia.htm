@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta charset="UTF-8">
+        <title>Contact Sophia </title>
+        <link rel="icon" type="image/ico" href="Images/s.jpg" />
+        <style type="text/css">
+
+                nav{text-align: center;
+                display: inline-block;
+                position: fixed;
+                background-color: white;
+                margin: 0 0 0 0;
+                padding: 5px 0 0px 0;
+                font-size: 100%;
+                width:100%;
+                overflow: hidden;
+                top:0;}
+    
+                #fakenav{text-align: center;
+                position: static;
+                background-color: rgb(248, 238, 241);
+                margin: 0 0 0 0;
+                padding: 10px 0 10px 0;
+                color:rgb(248, 238, 241)}
+
+                 
+                body{background-color:rgb(248, 238, 241);
+                text-align: center;
+                padding-top: 20px}
+
+                a:link{text-decoration: none;
+                color:black}
+
+                a:visited{color:black;
+                text-decoration: none}
+
+                a:hover{font-weight: bolder}
+
+
+                #index{font-size: 25px}
+        </style>
+
+        <nav>
+                <a id="index" href="index.htm">Sophia Zhu</a>
+                <p> 
+                <a  href="index.htm">ME</a> &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp
+                <a  href="AboutMe.htm">About Me</a> &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp
+                <a href="Resume.htm">My Resume</a> &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp
+                <a  href="low.htm">List of Work</a> &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp
+                <a href="ContactSophia.htm">Contact Me</a>
+             </p>
+        
+         </nav>
+</head>
+
+<body>
+    <nav id="fakenav">
+        This is
+        <br>fake nav
+    </nav>
+
+</body>
+
+<p>Email: <a href="mailto:szhu2@babson.edu">szhu2@babson.edu</a>
+<br>Phone Number: 917.251.3822</p>
+
+Or, fill out this form below:
+<br>
+(Yes, I am shamelessly demonstrating my HTML skills)
+
+<p> </p>
+<form method="POST" action="mailto:szhu2@babson.edu">
+     <p> First Name: <input type="text" name="firstname" maxlength="13" size="8"></p>
+    <p>Last Name: <input type="text" name="lastname" maxlength="13" size="9"></p>
+    <p>Company: <input type="text" name="company" maxlength="13" size="9"></p>
+    <p>Email: <input type="text" name="email" maxlength="25" size="15"></p>
+    <p>Reason for reaching out:
+            <select name="Reason" value="Reason">
+                    <option value="-1"></option>
+                    <option value="0">You want to hire me</option>
+                    <option value="1">You are thinking about hiring me</option>
+                    <option value="2">You need a friend</option></select></p>
+    <p><textarea name="comments" rows="7" cols="50"></textarea></p>
+
+            
+    <p> 
+            <input type="submit" name="Submit" value="Send">
+            <input type="reset" name="reset" value="Oops"></p> 
+    
+</form>
+
+</html>
