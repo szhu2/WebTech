@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Homework 3</title>
+        <style type="text/css">
+            h1 {
+                text-align: center;
+                font-family: Arial;
+                color: Navy;
+            }
+            img {
+                border: 6px solid;
+                margin-bottom: 100px;
+            }
+            p.cent {
+                text-align: center;
+            }
+            ul,
+            p#inst {
+                margin-right: 200px;
+                margin-left: 200px;
+                font-family: Cursive;
+                font-size: 1em;
+            }
+            li {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            button {
+                margin-right: 20px;
+                background-color: White;
+                height: 50px;
+                width: 140px 
+            }
+        </style>
+        <script type="text/javascript">
+            function animal(x){
+                if(x=="gs"){
+                document.getElementById("animalimage").src="../classwork/Images/germanshepard.jpeg";
+                document.getElementById("animalimage").style.borderColor="yellow";
+                document.getElementById("animalname").innerHTML="German Shepard";
+                document.getElementById("gs").style.backgroundColor="silver";
+                document.getElementById("penguin").style.backgroundColor="white";
+                document.getElementById("sl").style.backgroundColor="white";
+                document.getElementById("lynx").style.backgroundColor="white";}
+
+                if(x=="penguin"){
+                document.getElementById("animalimage").src="../classwork/Images/penguin.jpg";
+                document.getElementById("animalimage").style.borderColor="red";
+                document.getElementById("animalname").innerHTML="Penguin";
+                document.getElementById("penguin").style.backgroundColor="silver";
+                document.getElementById("gs").style.backgroundColor="white";
+                document.getElementById("sl").style.backgroundColor="white";
+                document.getElementById("lynx").style.backgroundColor="white";}
+                if(x=="sl"){
+                document.getElementById("animalimage").src="../classwork/Images/snowleopard.jpg";
+                document.getElementById("animalimage").style.borderColor="blue";
+                document.getElementById("animalname").innerHTML="Snow Leopard";
+                document.getElementById("sl").style.backgroundColor="silver";
+                document.getElementById("gs").style.backgroundColor="white";
+                document.getElementById("penguin").style.backgroundColor="white";
+                document.getElementById("lynx").style.backgroundColor="white";}
+                if(x=="lynx"){
+                document.getElementById("animalimage").src="../classwork/Images/lynx.jpg";
+                document.getElementById("animalimage").style.borderColor="green";
+                document.getElementById("animalname").innerHTML="Lynx";
+                document.getElementById("lynx").style.backgroundColor="silver";
+                document.getElementById("gs").style.backgroundColor="white";
+                document.getElementById("penguin").style.backgroundColor="white";
+                document.getElementById("sl").style.backgroundColor="white";}}
+
+                function enlarge(x){
+                let i=document.getElementById(x);
+                let w=i.width;
+                i.width=w*(1+0.75);}
+
+                function shrink(x){
+                let i=document.getElementById(x);
+                let w=i.width;
+                i.width=400;}
+                
+
+
+    
+
+        </script>
+
+    </head>
+
+    <body>
+        <h1 id="animalname"> The Animal Name Goes Here</h1>
+        <p class="cent">
+            <img width="400" onmouseover="enlarge(this.id)" onmouseout="shrink(this.id)" id="animalimage" src="" alt="image of dog"/>
+        </p>
+        <p class="cent">
+            <button id="gs" onclick="animal(this.id)">German Shepherd</button>
+            <button id="penguin" onclick="animal(this.id)">Penguin</button>
+            <button id="sl" onclick="animal(this.id)">Snow Leopard</button>
+            <button id="lynx" onclick="animal(this.id)">Lynx</button>
+        </p>
+        <p id="inst">The homework is graded out of 25 points. Please create the functionality, using JavaScript, to do the following:</p>
+        <ul>
+            <li> Display the image of the animal corresponding to the button the user clicks on. The place-holder for the image
+                is provided to you. (8 points).</li>
+            <li> Change the color of the image border based on the animal displayed. Yellow for German Shepherd, Red for Penguin,Green
+                for Snow Leopard and, Lime for Lynx. If my color choices are poor, you can pick your own colors as long as
+                it is different and unique for each animal image.(4 points)</li>
+            <li> Change the heading, "The Animal Name Goes Here" to the type of animal shown. (3 points)</li>
+            <li> Change the background color of the button that the user clicks on to Silver. Only the button the user has clicked
+                on must be Silver. All others must be White.(5 points)</li>
+            <li>Write another function to enlarge the image by 75% when the user mouses-over it and return it to normal size
+                when the user mouses-out of the image.</li>
+            <li> Please use a single function for all of the above functionality (5 points). If you cannot, please use as many
+                functions as needed (0 points)</li>
+        </ul>
+        <a href="../classwork/low.htm">My Work in WebTech</a>
+
+    </body>
+
+</html>
