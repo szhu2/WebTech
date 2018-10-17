@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta charset="UTF-8">
+        <title>CS13 Demo</title>
+        <script type="text/javascript">
+            function ask(){
+                let x=prompt("Are you male or female?");
+                document.getElementById("userInput").innerHTML=x;
+
+                if(x.toLowerCase()=="male"){
+                    document.getElementById("result").innerHTML="Hello,sir. How are you?";
+                    document.getElementById("img1").src= "Images/man.png";
+                    }
+
+                else if (x.toLowerCase()=="female") {
+                    document.getElementById("result").innerHTML="Hello,mamdam. How are you?";
+                    document.getElementById("img1").src= "Images/Queen.jpg";}
+                else{
+                    document.getElementById("result").innerHTML="Hello,Robot";
+                    }
+            }
+
+        function clean(){
+            document.getElementById("result").innerHTML="";
+            document.getElementById("img1").src= "";
+            document.getElementById("userInput").innerHTML="";}
+        
+
+        
+        
+            // function ask(){
+            //     let message= prompt("What day is it today?");
+            //     document.getElementById("userInput").innerHTML=message
+
+            //     let message2=prompt("What is your name?");
+            //     document.getElementById("userInput2").innerHTML=message2
+
+            //     if ((message=="Tuesday") && (message2=="Sophia")){
+            //         document.getElementById("result").innerHTML="correct"
+            //     }
+            //     else {document.getElementById("result").innerHTML="wrong"}
+            // }
+
+        </script>
+
+</head>
+
+<body>
+    <h1>Conditional Statements Demo</h1>
+    <button onclick="ask()">Click Me!</button>
+    <button onclick="clean()">Clean</button>
+    <p>
+        input: <span id="userInput"></span>
+    </p>
+    <!-- <p>name: <span id="userInput2"></span></p>
+    <p> -->
+        Result: <span id="result"></span>
+        <br><img id="img1" src="">
+    </p> 
+
+</body>
+
+</html>

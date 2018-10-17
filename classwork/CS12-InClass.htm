@@ -11,21 +11,22 @@
             body {
                 text-align: center;
             }
-            img { 
+
+            img {
    border:1px solid red;
 }
         </style>
         <script type="text/javascript">
-        function enlarge(){
-                let i=document.getElementById("map");
+        function enlarge(x){
+                let i=document.getElementById(x);
                 let w=i.width;
                 i.width=w*(1+0.5);
+                i.style.border=red;
         }
-        function shrink(){
-           let i=document.getElementById("map");
+        function shrink(x){
+           let i=document.getElementById(x);
                 let w=i.width;
                 i.width=400;
-                i.style.border="None";
 
 
         }
@@ -37,9 +38,11 @@
 
         <h2> Manipulating Styles and Images </h2>
 
-        <p><img src="images/usa.png" alt="Image goes here" title="map of USA" width="400"  onmouseover="enlarge()" onmouseout="shrink()" id="map"></p>
+        <p><img src="Images/usa.png" alt="Image goes here" title="map of USA" width="400"  onmouseover="enlarge(this.id)" onmouseout="shrink(this.id)" id="map"></p>
 
         <hr>
+        <p><img src="Images/sophiazhu.jpg" alt="Image goes here" title="map of USA" width="400"  onmouseover="enlarge(this.id)" onmouseout="shrink(this.id)" id="me"></p>
+
         <p><a href="low.htm">My Work in WebTech</a></p>
 
     </body>
