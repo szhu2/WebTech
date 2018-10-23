@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>CS15-InClass2 - Temperature Converter</title>
+        <style type="text/css">
+            form {
+                font-family: Arial;
+                font-weight: bold;
+                padding: 60px;
+                width: 50%;
+                margin-right: auto;
+                margin-left: auto;
+                background-color: Silver;
+            }
+            h1 {
+                font-family: Arial;
+                font-weight: bold;
+                text-align: center;
+            }
+            div#d1 {
+                margin-bottom: 40px;
+            }
+        </style>
+    <script type="text/javascript">
+        function convert(){
+            let myForm=document.getElementById("myform")
+            let cels=myForm.cel.value
+            let fah=myForm.far.value
+
+
+            if((cels=="")&&(fah=="")){
+                alert("Please enter a Celsius or Fahrenheit value")
+            }
+            else if (isNaN(cels)||isNaN(fah)){
+                alert("Input is not a number")
+            }
+            else if ((isNaN(myForm.cel.value)==false) && (myForm.far.value=="")){
+                myForm.far.value=parseFloat(myForm.cel.value)*(9/5)+32
+            }
+            else if ((isNaN(myForm.far.value)==false) && (myForm.cel.value=="")){
+                myForm.cel.value=(parseFloat(myForm.far.value)-32)*(5/9)
+            }
+
+                return false;
+
+
+        }
+    
+    
+    
+    </script>
+    </head>
+
+    <body>
+        <!-- Your HTML goes here -->
+        <h1> Celsius Fahrenheit Converter</h1>
+        <form id="myform" action="" method="post">
+            <div id="d1">
+                Celsius: <input type="text" name="cel" size="10" /> Fahrenheit: <input type="text" name="far" size="10" />
+            </div>
+
+            <div style="margin-left:100px">
+                <input type="submit" name="submit" value="Convert" onclick="return convert()" style="width:80px; height:40px;" />
+                <input type="reset" name="reset" value="Clear" style="width:80px; height:40px;" />
+            </div>
+        </form>
+		<p><a href="low.htm">My Work in WebTech</a></p>
+
+    </body>
+
+</html>
