@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta charset="UTF-8">
+        <title>Slideshow Demo </title>
+        <style type="text/css">
+        img{
+        width: 350px;
+        border: 5px solid cornflowerblue}
+        body{text-align: center}
+        
+   
+        
+        </style>
+        <script type="text/javascript">
+            var slides= new Array("../term project/WO1.jpg",
+            "../term project/WO2.jpg",
+            "../term project/WO3.jpg",
+            "../term project/WO4.jpg");
+            var description= new Array("Aritzia Dujardin Jacket","Aritizia Sherpa Hoodie", 
+                "Aritzia Lawson Trench", "Aritzia Sherwood Jacket")
+            var bordercolor= new Array("cornflowerblue","skyblue","lightpink","lavender")
+
+            var i=0
+            var counter=20
+            function slideshow() {
+                let img=document.getElementById("WomensOuterwear");
+                let des=document.getElementById("description");
+                // if(i==slides.length){
+                //     i=0;
+                 
+                // }
+                --counter;
+                document.getElementById("count").innerHTML=counter
+                des.innerHTML= description[i];
+                img.src=slides[i];
+                img.style.borderColor=bordercolor[i];
+                i++;
+                setTimeout("slideshow()",1500);
+            }
+        </script>
+
+</head>
+
+<body onload="slideshow()">
+<p><img id="WomensOuterwear" src="../term project/WO1.jpg" /></p>
+<p id="description"></p>
+<p>Counter=<span id="count"></span></p>
+
+</body>
+
+</html>

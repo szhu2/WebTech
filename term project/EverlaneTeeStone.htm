@@ -3,6 +3,11 @@
 
 <head>
         <meta charset="UTF-8">
+        <meta name="keywords" content= "sustainable, subtainability,
+             clothing, moral, factories, eco, ethical, shop, men, women,
+            website, ethically produced">
+        <meta name="desciption" content="A one stop shop for ethically and sustainably produced clothing">
+        <meta name="author" content="Sophia Zhu"> 
         <title>ECO Everlane Tee</title>
         <style type="text/css">
 
@@ -16,10 +21,15 @@
                 overflow: hidden;
                 top:0;}
 
-                img{padding-left: 150px;
-                padding-top:60px;
-                float:left}
-                #details{padding-top: 60px}
+                img{margin-left: 100px;
+                margin-top:80px;
+                float:left;
+                border:darkgray 2.5px solid;
+                border-radius: 10px;
+                border-style: double}
+                #details{padding-top: 80px;
+                padding-left:520px;
+                padding-right: 50px}
     
                 a:link{text-decoration: none;
                 color:black}
@@ -32,10 +42,55 @@
 
                 #index{font-size: 25px;
                 text-align: left}
-
-                
-
+                #brand{font-size: 28px;
+                font-weight: bolder;
+                color:rgb(68, 67, 67)}
+                #brand:hover{text-decoration: underline}
+                #color{font-size: 20px}
+                .price{font-size: 18px}
+                #box{border: 2.5px solid darkgray;
+                        border-radius: 10px;
+                        border-style: double;
+                        padding:20px;
+                        background-color:rgb(245, 240, 238)}
+                .button{padding: 15px 32px;}
+                .ECO{font-size: 20px}
         </style>
+        <script type="text/javascript">
+
+
+                let images= new Array("MT1.jpg","stone1.jpg","stone2.jpg");
+                let i=0;
+                function slideshow() {
+                if(i==images.length){
+                i=0;}
+                let img=document.getElementById("productimage");
+                img.src=images[i];
+                i++;
+                setTimeout("slideshow()",1500);
+            }
+            function stock(){
+                    size=document.getElementById("addcart").value
+                    if(size==""){
+                            alert("Please Select a Size")
+                    }
+                    else if(size=="s"){
+                            alert("Small Added to Cart")
+                    }
+                    else if(size=="m"){
+                            alert("Medium Added to Cart")
+                    }
+                    else if(size=="l"){
+                            alert("Large Added to Cart")
+                    }
+                    else if(size=="xl"){
+                            alert("X-Large Added to Cart")
+                    }
+
+
+
+            }
+        </script>
 
         <nav>
                         <a id="index" href="Index.htm">The ECO Hub</a> &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp  &nbsp 
@@ -49,24 +104,38 @@
 
 
 
-<body>
-                <img src="MT1.jpg" alt="Everlane Men's Tee" width="350px">
+<body onload="slideshow()">
+                <img id="productimage" src="MT1.jpg" alt="Everlane Men's Tee" width="350px">
                 <div id="details">
-                        Everlane<br>
-                        Heavyweight Crew<br>
+                        <span id="brand">Everlane: Heavyweight Crew</span><br>
+                        <span id="color">Stone</span><br>
+                        <span class="price">$28</span><br><br>
 
-                        Color: Stone
-                        <br>E ~ Factory: Nobland Vietnam Company, Ltd.
-                        <br>Location: Ho Chi Minh City, Vietnam
-                        <br>Size: 8000
-                        <br>C ~ Material: 100% Cotton
-                        <br>6.1oz Cotton
-                        <br>O ~ Everlane was founded in 2010 by Michael Preysman a 25-year-old entrepreneur. 
-                        From the outset, Preysman wanted to create designer-quality basics at low prices. 
-                        To do this, he aimed to sell direct to consumer through an e-commerce site in order to 
-                        bypass the middleman and avoid traditional retail costs, inflated margins and markups.
+                        <div id="box">
+                        <span class="ECO">E ~</span> Factory: Nobland Vietnam Company, Ltd.
+                        <br> &nbsp; &nbsp; &nbsp; &nbsp; Location: Ho Chi Minh City, Vietnam
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; Size: 8000<br>
+                        <br><span class="ECO">C ~</span> Material: 100% Cotton
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; 6.1oz Cotton<br>
+                        <br><span class="ECO">O ~</span> Everlane was founded in 2010 by Michael Preysman a 25-year-old entrepreneur. 
+                        From the &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; outset, Preysman wanted to create designer-quality basics at low prices. 
+                        To do this, he aimed  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; to sell direct to consumer through an e-commerce site in order to 
+                        bypass the middleman and &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; avoid traditional retail costs, inflated margins and markups.
+                </div>
+                <br>
+                
+                <span class="price">Select Size:</span>&nbsp; <select  id="addcart" name="size" value="Size">
+                                <option value="">Size</option>
+                                <option value="s">Small</option>
+                                <option value="m">Medium</option>
+                                <option value="l">Large</option>
+                                <option value="xl">X-Large</option></select>
+                                
 
-                        <p>add a "Cop from Everlane" button</p>
+
+                        <p><button onclick="stock()" class="button">Add to Cart</button> &nbsp; 
+                                <a href="https://www.everlane.com/products/mens-heavyweight-tee-stone"><button class="button">Cop from Everlane</button></a>
+                                </p>
 
                               
 

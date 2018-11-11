@@ -25,22 +25,27 @@
         </style>
     <script type="text/javascript">
         function convert(){
-            let myForm=document.getElementById("myform")
-            let cels=myForm.cel.value
-            let fah=myForm.far.value
+            let myForm=document.getElementById("myform");
+            let cels=myForm.cel.value;
+            let fah=myForm.far.value;
 
 
             if((cels=="")&&(fah=="")){
-                alert("Please enter a Celsius or Fahrenheit value")
+                alert("Please enter a Celsius or Fahrenheit value");
             }
             else if (isNaN(cels)||isNaN(fah)){
-                alert("Input is not a number")
+                alert("Input is not a number");
             }
-            else if ((isNaN(myForm.cel.value)==false) && (myForm.far.value=="")){
-                myForm.far.value=parseFloat(myForm.cel.value)*(9/5)+32
+            else if ((isNaN(cels)==false) && (fah=="")){
+                // alert(parseFloat(cels)*(9/5)+32)
+                fah=parseFloat(cels)*(9/5)+32;
+                myForm.far.value = fah.toFixed(2);
+
+
             }
-            else if ((isNaN(myForm.far.value)==false) && (myForm.cel.value=="")){
-                myForm.cel.value=(parseFloat(myForm.far.value)-32)*(5/9)
+            else if ((isNaN(fah)==false) && (cels=="")){
+                cels=(parseFloat(fah)-32)*(5/9);
+                myForm.cel.value=cels.toFixed(1);
             }
 
                 return false;

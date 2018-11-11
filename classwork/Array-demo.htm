@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta charset="UTF-8">
+        <title>Array Demo </title>
+        <script type="text/javascript">
+            function choose(){
+                    let myForm=document.getElementById("form1");
+                    let userChoice=document.getElementById("choice")
+                    // if (myForm.colors[0].checked){
+                    //     userChoice.innerHTML=myForm.colors[0].value;
+                    // }
+                    // else if (myForm.colors[1].checked){
+                    //     userChoice.innerHTML=myForm.colors[1].value;
+
+                    // }
+                    // else if (myForm.colors[2].checked){
+                    //     userChoice.innerHTML=myForm.colors[2].value;
+
+                    // }
+                    // else if (myForm.colors[3].checked){
+                    //     userChoice.innerHTML=myForm.colors[3].value;
+
+                    // }
+                    // else{
+                    //     userChoice.innerHTML= "nothing"
+                    // }
+
+                    // show sum of all integers from 0 to 10
+                    // let sum=0;
+                    // for(let i=0; i<=10; i++){
+                        // sum +=i or sum= sum+i
+                    // }
+
+                    // solution1
+                    // for(let i=0;i<=10;i=i+2){
+                        // result+=i
+                    // }
+                        // solution2
+                        // for(let i=0; i<6; i++){
+                            // result +=i*2;
+                            // alert("after adding" + i*2 + "result becomes" + result)
+
+                        // }
+
+                        // solution 3
+                        // for(let i=0; i<=10; i++){
+                        //     if(i%2==0){result+=i;}
+                        // }
+                    for (let i=0; i<myForm.colors.length; i++){
+                        if(myForm.colors[i].checked){
+                            userChoice.innerHTML=myForm.colors[i].value;
+                        }
+                    }
+                    // let colors=new Array("green","yellow"...)
+                    let x="";
+                    const tweets=["Hi errrone", "I love Sophia", "me in webtech", "okurrrrrr", "ok bye"]
+                    for (let i=0; i<tweets.length; i++){
+                        if(i % 2==0){
+                        x= x + tweets[i]+"</br>";} 
+                    }
+                    document.getElementById("tweet").innerHTML=x;
+
+                    return false
+            }
+        
+        </script>
+
+</head>
+
+<body>
+    
+    <h1>Array Demo</h1>
+    <form action="" method="post" id="form1">
+        Red: <input type="radio" name="colors" value="red"><br>
+        Blue: <input type="radio" name="colors" value="blue"><br>
+        Yellow: <input type="radio" name="colors" value="yellow"><br>
+        Green: <input type="radio" name="colors" value="green"><br>
+        <button onclick="return choose()">Click me!</button>
+        <button type="reset" value="clear">Reset</button>
+
+    </form>
+    <p>You have chosen <span id="choice"></span></p>
+    <p id="tweet"></p>
+
+</body>
+
+</html>
